@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Syncopate', sans-serif;
+    background: rgb(8, 1, 8);
+    background-image: url(catbackground.png);
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.title-container img {
+    position: absolute;
+    position: fixed;
+    left: 0;
+    width: 6vw;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: rgba(243, 237, 250, 0.993);
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Image container */
+.image-container {
+    margin: 10px 30%;
+}
+
+/* BOTH images and videos should fill the container */
+.image-container img,
+.image-container video {
+    width: 100%;
+    margin-top: 5px;
+    display: block;        /* Removes extra space below */
+    height: auto;          /* Maintains aspect ratio */
+}
+
+/* Ensure links containing media are block-level */
+.image-container a {
+    display: block;
+    width: 100%;
+}
+
+/* Media Query: Tablet */
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .image-container {
+        margin: 10px 10%;
+    }
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 15px;
+    }
+
+    .image-container {
+        margin: 10px;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "title": "Infinite Cats",
+    "heading": "Depressed? Enjoy Cat Photos and Videos!",
+    "favicon": "favicon.ico",
+    "background": "catbackground.png",
+    "mediaFolder": "media",
+    "initialCount": 10,
+    "loadMoreCount": 30
+}
