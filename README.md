@@ -60,3 +60,8 @@ Check the status of the process or monitor live runtime output using these utili
 sudo pm2 status
 sudo pm2 logs stub
 ```
+
+## Example
+<p align="left">
+  <img src="https://github.com/mirham/InfiniteLoadingSiteStub/blob/main/example/Example.png" width="700">
+</p>
